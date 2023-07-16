@@ -4,7 +4,7 @@ import csv
 
 def make_changes(data, changes):
     for change in changes:
-        X, Y, value = map(str.strip, change.split(","))
+        X, Y, value = map(str.strip, change.split(",", 2))
         X = int(X)
         Y = int(Y)
         data[Y][X] = value
